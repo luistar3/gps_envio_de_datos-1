@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.gps1.MainActivity">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:id="@+id/mensaje_id"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_enviar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/lbl_usuario"
+        android:layout_marginBottom="48dp" />
+
+    <TextView
+        android:text="Puerto:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_puerto"
+        android:layout_above="@+id/btn_enviar"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="66dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="4444"
+        android:ems="10"
+        android:id="@+id/txt_puerto"
+        android:layout_alignBaseline="@+id/lbl_puerto"
+        android:layout_alignBottom="@+id/lbl_puerto"
+        android:layout_toEndOf="@+id/lbl_puerto"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/mensaje_id2"
+        android:layout_below="@+id/mensaje_id"
+        android:layout_alignStart="@+id/mensaje_id" />
+
+    <TextView
+        android:text="Dir Ip:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_dir_ip"
+        android:layout_above="@+id/lbl_puerto"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="10.0.2.2"
+        android:ems="10"
+        android:id="@+id/txt_ip"
+        android:layout_alignBaseline="@+id/lbl_dir_ip"
+        android:layout_alignBottom="@+id/lbl_dir_ip"
+        android:layout_alignStart="@+id/txt_puerto" />
+
+    <TextView
+        android:id="@+id/lbl_dato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mensaje_id2"
+        android:layout_below="@+id/mensaje_id2"
+        android:layout_marginTop="24dp"
+        android:text="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_above="@+id/txt_ip"
+        android:layout_alignEnd="@+id/txt_ip"
+        android:id="@+id/txt_usuario" />
+
+    <TextView
+        android:id="@+id/lbl_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_usuario"
+        android:layout_alignBottom="@+id/txt_usuario"
+        android:layout_toStartOf="@+id/txt_ip"
+        android:text="Usuario:" />
+
+    <Button
+        android:id="@+id/btn_detener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_enviar"
+        android:layout_centerHorizontal="true"
+        android:text="DETENER" />
+
+</RelativeLayout>
